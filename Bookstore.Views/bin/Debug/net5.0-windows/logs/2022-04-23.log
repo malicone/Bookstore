@@ -1,0 +1,14 @@
+2022-04-23 15:01:27.1954 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-23 15:01:32.9343 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2022-04-23 15:01:53.0620 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2022-04-23 15:05:33.0405 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-23 15:05:37.5130 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2022-04-23 15:06:01.9095 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2022-04-23 15:12:31.8443 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-23 15:12:34.9819 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2022-04-23 15:20:52.9205 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-23 15:21:00.9692 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2022-04-23 15:38:30.8574 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-23 15:38:34.5853 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2022-04-23 16:02:10.0685 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-23 16:02:14.3229 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 

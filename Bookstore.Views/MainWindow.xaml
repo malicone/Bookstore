@@ -1,0 +1,77 @@
+﻿<Window x:Class="Bookstore.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bookstore.Views"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <StackPanel>
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="New Project" ></MenuItem>
+                <MenuItem Header="Open Project" >
+                    <MenuItem Header="WinForms"></MenuItem>
+                    <MenuItem Header="WPF" ></MenuItem>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Exit" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Edit" ></MenuItem>
+            <MenuItem Header="View" ></MenuItem>
+        </Menu>
+
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar Height="25">
+                <Button ToolTip="New Book" Click="New_Button_Click">
+                    <Image Source="/new.png" />
+                </Button>
+
+                <Button ToolTip="Edit Book">
+                    <Image Source="/new.png" />
+                </Button>
+
+                <Button ToolTip="Delete Book">
+                    <Image Source="/new.png" />
+                </Button>
+                <Separator />
+                <Button ToolTip="Groups">
+                    <Image Source="/new.png" />
+                </Button>
+            </ToolBar>
+        </ToolBarTray>
+
+        <TabControl>
+            <TabItem Header="List">
+                <DataGrid x:Name="gridBooks" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                    AutoGenerateColumns="False" HorizontalGridLinesBrush="DarkGray"
+                    RowBackground="LightGray" AlternatingRowBackground="White"
+                    VerticalScrollBarVisibility="Visible" MaxHeight="500" IsReadOnly="True"
+                    ItemsSource="{Binding Books}">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Id" Binding="{Binding Path=ID}" Width="40" />
+                        <DataGridTextColumn Header="Author" Binding="{Binding Path=AUTHOR}" Width="200" />
+                        <DataGridTextColumn Header="Title" Binding="{Binding Path=TITLE}" Width="250" />
+                        <DataGridTextColumn Header="Publisher" Binding="{Binding Path=PublisherName}" Width="200" />
+                        <DataGridTextColumn Header="Group" Binding="{Binding Path=GroupName}" Width="200" />
+                        <DataGridTextColumn Header="Shop" Binding="{Binding Path=ShopName}" Width="100" />
+                        <DataGridTextColumn Header="City" Binding="{Binding Path=CityName}" Width="100" />
+                        <DataGridTextColumn Header="Language" Binding="{Binding Path=LanguageName}" Width="100" />
+                        <DataGridTextColumn Header="Pages" Binding="{Binding Path=PAGE_COUNT}" Width="70" />
+                        <DataGridTextColumn Header="Year" Binding="{Binding Path=PUBLISH_YEAR}" Width="70" />
+                        <DataGridTextColumn Header="Edition" Binding="{Binding Path=EDITION}" Width="70" />
+                        <DataGridTextColumn Header="ISBN" Binding="{Binding Path=ISBN}" Width="100" />
+                        <DataGridTextColumn Header="Price" Binding="{Binding Path=PRICE}" Width="70" />
+                        <DataGridTextColumn Header="Received" Binding="{Binding Path=DATE_WHEN_GET}" Width="100" />
+                        <DataGridTextColumn Header="Format" Binding="{Binding Path=FORMAT}" Width="100" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Details">
+
+            </TabItem>
+        </TabControl>
+
+    </StackPanel>
+</Window>

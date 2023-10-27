@@ -1,0 +1,4 @@
+2022-04-22 19:44:53.2232 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-22 19:44:58.2006 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2022-04-22 20:02:10.1760 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-22 20:02:33.4000 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 

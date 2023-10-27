@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "75f20094-d6a7-494c-98c5-c5eb55106193": {
+      "ProjectGuid": "75f20094-d6a7-494c-98c5-c5eb55106193",
+      "DisplayName": "Bookstore.Views",
+      "ColorIndex": 0
+    },
+    "8857ac5b-d747-4c62-a902-9baf967e3872": {
+      "ProjectGuid": "8857ac5b-d747-4c62-a902-9baf967e3872",
+      "DisplayName": "Bookstore.Model",
+      "ColorIndex": 1
+    },
+    "ac29a794-ce36-4106-a903-0afbb0a04064": {
+      "ProjectGuid": "ac29a794-ce36-4106-a903-0afbb0a04064",
+      "DisplayName": "Bookstore.Views",
+      "ColorIndex": 2
+    },
+    "04449c77-ada2-4b28-a718-ad10f78bcd94": {
+      "ProjectGuid": "04449c77-ada2-4b28-a718-ad10f78bcd94",
+      "DisplayName": "Bookstore.ViewModel",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

@@ -1,0 +1,16 @@
+2022-04-20 14:57:23.2323 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-20 16:23:16.3447 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-20 16:23:21.5988 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2022-04-20 16:23:21.7374 | ERROR | Bookstore.ViewModel.ViewModelBase | Exception in ViewModelBook | System.InvalidOperationException: Connection already Open.
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at Bookstore.ViewModel.ViewModelBase.SetupConnection() in C:\Projects\Bookstore\Bookstore.ViewModel\ViewModelBase.cs:line 45
+2022-04-20 17:51:54.9846 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-20 17:51:59.2496 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2022-04-20 17:51:59.3805 | ERROR | Bookstore.ViewModel.ViewModelBase | Exception in ViewModelBook | System.InvalidOperationException: Connection already Open.
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at Bookstore.ViewModel.ViewModelBase.SetupConnection() in C:\Projects\Bookstore\Bookstore.ViewModel\ViewModelBase.cs:line 45
+2022-04-20 18:17:54.3367 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2022-04-20 18:17:58.1574 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2022-04-20 18:17:58.2908 | ERROR | Bookstore.ViewModel.ViewModelBase | Exception in ViewModelBook | System.InvalidOperationException: Connection already Open.
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at Bookstore.ViewModel.ViewModelBase.SetupConnection() in C:\Projects\Bookstore\Bookstore.ViewModel\ViewModelBase.cs:line 45
