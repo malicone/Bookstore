@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    "net8.0": {
       "Dapper/2.0.123": {
         "type": "package",
         "compile": {
@@ -98,7 +98,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    "net8.0": [
       "Dapper >= 2.0.123",
       "Dapper.Contrib >= 2.0.78",
       "FirebirdSql.Data.FirebirdClient >= 8.5.4"
@@ -106,7 +106,8 @@
   },
   "packageFolders": {
     "C:\\Users\\max\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "E:\\MyProgs\\Syncfusion\\25.1.35\\WPF\\25.1.35\\ToolboxNuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -118,24 +119,28 @@
       "outputPath": "C:\\Projects\\Bookstore\\Bookstore.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "E:\\MyProgs\\Syncfusion\\25.1.35\\WPF\\25.1.35\\ToolboxNuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\max\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "E:\\MyProgs\\Syncfusion\\25.1.35\\WinUI\\25.1.35\\NuGetPackages": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/mV12OR7RA5NC1Ro6BhsBcoiPkfkf9zcggWsrCuIXNeRrS3GqSp/api/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -143,11 +148,16 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Dapper": {
             "target": "Package",
@@ -178,7 +188,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23455.8\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

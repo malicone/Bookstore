@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {
+    "net8.0-windows7.0": {
       "Dapper/2.0.123": {
         "type": "package",
         "compile": {
@@ -125,12 +125,12 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -146,12 +146,12 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {
             "related": ".xml"
           }
         },
@@ -162,12 +162,12 @@
       "Microsoft.Extensions.FileSystemGlobbing/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
             "related": ".xml"
           }
         },
@@ -181,12 +181,12 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
         },
@@ -226,15 +226,71 @@
           "build/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "Syncfusion.Data.WPF/26.2.9": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {
+          "lib/net6.0-windows7.0/Syncfusion.Data.WPF.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {
+          "lib/net6.0-windows7.0/Syncfusion.Data.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/26.2.9": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.SfGrid.WPF/26.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Data.WPF": "26.2.9",
+          "Syncfusion.Licensing": "26.2.9",
+          "Syncfusion.Shared.WPF": "26.2.9"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Shared.WPF/26.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "26.2.9"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
         },
@@ -248,12 +304,12 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll": {
+          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll": {
+          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
@@ -261,7 +317,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll": {
+          "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -273,17 +329,23 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/System.Text.Encodings.Web.dll": {
+          "lib/net6.0/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/System.Text.Encodings.Web.dll": {
+          "lib/net6.0/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll": {
+            "assetType": "runtime",
+            "rid": "browser"
+          }
         }
       },
       "System.Text.Json/6.0.0": {
@@ -293,12 +355,12 @@
           "System.Text.Encodings.Web": "6.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/System.Text.Json.dll": {
+          "lib/net6.0/System.Text.Json.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/System.Text.Json.dll": {
+          "lib/net6.0/System.Text.Json.dll": {
             "related": ".xml"
           }
         },
@@ -308,7 +370,7 @@
       },
       "Bookstore.Model/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Dapper": "2.0.123",
           "Dapper.Contrib": "2.0.78",
@@ -323,7 +385,7 @@
       },
       "Bookstore.ViewModel/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Bookstore.Model": "1.0.0",
           "FirebirdSql.Data.FirebirdClient": "8.5.4",
@@ -656,6 +718,112 @@
         "weaver/PropertyChanged.Fody.xcf"
       ]
     },
+    "Syncfusion.Data.WPF/26.2.9": {
+      "sha512": "lTqto1wbFCTNTKDx9mWWYSmfL3ri6teJQESTpK83BIE6vlUrCrjD3KOsHQ3Vbxm4VxLOY5I2CMFcRx1ygLXdxw==",
+      "type": "package",
+      "path": "syncfusion.data.wpf/26.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net40/Syncfusion.Data.WPF.dll",
+        "lib/net40/Syncfusion.Data.WPF.xml",
+        "lib/net462/Syncfusion.Data.WPF.dll",
+        "lib/net462/Syncfusion.Data.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Data.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Data.WPF.xml",
+        "syncfusion.data.wpf.26.2.9.nupkg.sha512",
+        "syncfusion.data.wpf.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Licensing/26.2.9": {
+      "sha512": "Ttx6OJ+srZimPk1MIi7B2EMd+wYiwDWNf90dX6a3IH51ze4PErV27LT5Fl8vgRM9mDxWd5dCGJdRAimXWjqDVw==",
+      "type": "package",
+      "path": "syncfusion.licensing/26.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net462/Syncfusion.Licensing.dll",
+        "lib/net6.0/Syncfusion.Licensing.dll",
+        "lib/net7.0/Syncfusion.Licensing.dll",
+        "lib/net8.0/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.26.2.9.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.SfGrid.WPF/26.2.9": {
+      "sha512": "TlZYnVSBJa0oMJ5Y/4iEDlJGFIUn9ZG4MLGUqfLV/xm9+tGr8QchdtOZEWH/k9bkdkd/76ZeORYfygUU9sKClg==",
+      "type": "package",
+      "path": "syncfusion.sfgrid.wpf/26.2.9",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.SfGrid.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.SfGrid.WPF.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.SfGrid.WPF.VisualStudio.Design.dll",
+        "lib/net40/Syncfusion.SfGrid.WPF.dll",
+        "lib/net40/Syncfusion.SfGrid.WPF.xml",
+        "lib/net462/Design/Syncfusion.SfGrid.WPF.DesignTools.dll",
+        "lib/net462/Design/Syncfusion.SfGrid.WPF.Expression.Design.dll",
+        "lib/net462/Design/Syncfusion.SfGrid.WPF.VisualStudio.Design.dll",
+        "lib/net462/Syncfusion.SfGrid.WPF.dll",
+        "lib/net462/Syncfusion.SfGrid.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfGrid.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.xml",
+        "syncfusion.sfgrid.wpf.26.2.9.nupkg.sha512",
+        "syncfusion.sfgrid.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Syncfusion.Shared.WPF/26.2.9": {
+      "sha512": "QR1cBP87JFass8rZPe7wr5FYHbj0lT14OSoc+/BllKyhSGeUEsnWBVU2AaJtoCAsUwgAZVnJQ7Ak+1qFU4O+Rg==",
+      "type": "package",
+      "path": "syncfusion.shared.wpf/26.2.9",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net40/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.Shared.Wpf.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.Shared.Wpf.VisualStudio.Design.dll",
+        "lib/net40/Design/Syncfusion.Shared.Wpf.dll.Design.dll",
+        "lib/net40/Syncfusion.Shared.WPF.dll",
+        "lib/net40/Syncfusion.Shared.WPF.xml",
+        "lib/net462/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net462/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net462/Design/Syncfusion.Shared.Wpf.Expression.Design.dll",
+        "lib/net462/Design/Syncfusion.Shared.Wpf.VisualStudio.Design.dll",
+        "lib/net462/Design/Syncfusion.Shared.Wpf.dll.Design.dll",
+        "lib/net462/Syncfusion.Shared.WPF.dll",
+        "lib/net462/Syncfusion.Shared.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.xml",
+        "syncfusion.shared.wpf.26.2.9.nupkg.sha512",
+        "syncfusion.shared.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "type": "package",
@@ -813,16 +981,18 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": [
+    "net8.0-windows7.0": [
       "Bookstore.ViewModel >= 1.0.0",
       "FirebirdSql.Data.FirebirdClient >= 8.5.4",
       "Microsoft.Extensions.Configuration >= 6.0.0",
-      "Microsoft.Extensions.Configuration.Json >= 6.0.0"
+      "Microsoft.Extensions.Configuration.Json >= 6.0.0",
+      "Syncfusion.SfGrid.WPF >= 26.2.9"
     ]
   },
   "packageFolders": {
     "C:\\Users\\max\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "E:\\MyProgs\\Syncfusion\\25.1.35\\WPF\\25.1.35\\ToolboxNuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -834,24 +1004,28 @@
       "outputPath": "C:\\Projects\\Bookstore\\Bookstore.Views\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "E:\\MyProgs\\Syncfusion\\25.1.35\\WPF\\25.1.35\\ToolboxNuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\max\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows"
+        "net8.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "E:\\MyProgs\\Syncfusion\\25.1.35\\WinUI\\25.1.35\\NuGetPackages": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/mV12OR7RA5NC1Ro6BhsBcoiPkfkf9zcggWsrCuIXNeRrS3GqSp/api/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0-windows7.0": {
-          "targetAlias": "net5.0-windows",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows7.0",
           "projectReferences": {
             "C:\\Projects\\Bookstore\\Bookstore.ViewModel\\Bookstore.ViewModel.csproj": {
               "projectPath": "C:\\Projects\\Bookstore\\Bookstore.ViewModel\\Bookstore.ViewModel.csproj"
@@ -863,11 +1037,16 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net5.0-windows7.0": {
-        "targetAlias": "net5.0-windows",
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows7.0",
         "dependencies": {
           "FirebirdSql.Data.FirebirdClient": {
             "target": "Package",
@@ -880,6 +1059,10 @@
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "Syncfusion.SfGrid.WPF": {
+            "target": "Package",
+            "version": "[26.2.9, )"
           }
         },
         "imports": [
@@ -901,7 +1084,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23455.8\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

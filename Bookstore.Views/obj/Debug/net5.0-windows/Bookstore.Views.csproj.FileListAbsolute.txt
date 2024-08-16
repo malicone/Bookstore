@@ -42,8 +42,9 @@ C:\Projects\Bookstore\Bookstore.Views\bin\Debug\net5.0-windows\Bookstore.Views.d
 C:\Projects\Bookstore\Bookstore.Views\bin\Debug\net5.0-windows\Bookstore.Views.runtimeconfig.json
 C:\Projects\Bookstore\Bookstore.Views\bin\Debug\net5.0-windows\Bookstore.Views.runtimeconfig.dev.json
 C:\Projects\Bookstore\Bookstore.Views\bin\Debug\net5.0-windows\Bookstore.Views.pdb
-C:\Projects\Bookstore\Bookstore.Views\obj\Debug\net5.0-windows\Bookstore.Views.csproj.CopyComplete
 C:\Projects\Bookstore\Bookstore.Views\obj\Debug\net5.0-windows\Bookstore.Views.genruntimeconfig.cache
 C:\Projects\Bookstore\Bookstore.Views\obj\Debug\net5.0-windows\BookWindow.g.cs
 C:\Projects\Bookstore\Bookstore.Views\obj\Debug\net5.0-windows\BookWindow.baml
 C:\Projects\Bookstore\Bookstore.Views\obj\Debug\net5.0-windows\refint\Bookstore.Views.dll
+C:\Projects\Bookstore\Bookstore.Views\obj\Debug\net5.0-windows\Bookstore.Views.sourcelink.json
+C:\Projects\Bookstore\Bookstore.Views\obj\Debug\net5.0-windows\Bookstor.48FCDA94.Up2Date

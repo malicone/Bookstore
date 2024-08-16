@@ -10,3 +10,4 @@ C:\Projects\Bookstore\Bookstore.Model\obj\Debug\net5.0\Bookstore.Model.dll
 C:\Projects\Bookstore\Bookstore.Model\obj\Debug\net5.0\ref\Bookstore.Model.dll
 C:\Projects\Bookstore\Bookstore.Model\obj\Debug\net5.0\Bookstore.Model.pdb
 C:\Projects\Bookstore\Bookstore.Model\obj\Debug\net5.0\refint\Bookstore.Model.dll
+C:\Projects\Bookstore\Bookstore.Model\obj\Debug\net5.0\Bookstore.Model.sourcelink.json
