@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:Bookstore.Views" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
-    <StackPanel>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
         <Menu Height="25" VerticalAlignment="Top">
             <MenuItem Header="File">
                 <MenuItem Header="New Project" ></MenuItem>
@@ -21,7 +30,7 @@
             <MenuItem Header="View" ></MenuItem>
         </Menu>
 
-        <ToolBarTray DockPanel.Dock="Top">
+        <ToolBarTray Grid.Row="0">
             <ToolBar Height="25">
                 <Button ToolTip="New Book" Click="New_Button_Click">
                     <Image Source="/new.png" />
@@ -41,19 +50,20 @@
             </ToolBar>
         </ToolBarTray>
 
-        <StatusBar Height="20" DockPanel.Dock="Bottom" VerticalAlignment="Bottom">
+        <StatusBar Height="20" Grid.Row="2">
             <StatusBarItem>
                 <TextBlock Text="Ready" />
             </StatusBarItem>
         </StatusBar>
 
-        <TabControl>
+        <TabControl Grid.Row="1">
             <TabItem Header="List">
 
                 <Grid>
                     <syncfusion:SfDataGrid x:Name="gridBooks" AllowDraggingColumns="True" AllowResizingColumns="True" 
                                            AllowSorting="True" AllowFiltering="True" ScrollViewer.VerticalScrollBarVisibility="Visible"
                                            ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                                           AllowGrouping="True" ShowGroupDropArea="True"                                           
                        ItemsSource="{Binding Books}" 
                        AutoGenerateColumns="True"/>
                 </Grid>
@@ -64,5 +74,5 @@
             </TabItem>
         </TabControl>
 
-    </StackPanel>
+    </Grid>
 </Window>

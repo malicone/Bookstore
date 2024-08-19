@@ -1,3 +1,14 @@
+1. All projects updated to .NET 8.
+2. Syncfusion DataGrid component added.
+
+
+
+
+
+
+
+
+
 <Window x:Class="SfDataGridSample.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
