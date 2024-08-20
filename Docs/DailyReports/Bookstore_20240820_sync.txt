@@ -1,0 +1,2 @@
+1. Main form grid columns arranged.
+2. Status message added to main view model (status bar).

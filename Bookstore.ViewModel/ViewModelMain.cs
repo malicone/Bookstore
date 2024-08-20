@@ -14,6 +14,10 @@ namespace Bookstore.ViewModel
     public class ViewModelMain : ViewModelBase
     {
         public ObservableCollection<BookEx> Books { get; set; }
+        public string StatusMessage
+        {
+            get { return $"Total book count: {Books.Count}"; }
+        }
         public ViewModelMain() : base()
         {
             _repoBOOK = RepoFactory.GetRepoBOOK();
@@ -43,7 +47,7 @@ namespace Bookstore.ViewModel
 
         protected override void SetTitle()
         {
-            Title = "Books";
+            Title = "Bookstore";
         }
 
         private readonly IRepoBOOK _repoBOOK;

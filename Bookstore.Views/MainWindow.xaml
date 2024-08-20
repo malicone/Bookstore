@@ -3,20 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Bookstore.Views" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:Bookstore.Views" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" xmlns:viewmodel="clr-namespace:Bookstore.ViewModel;assembly=Bookstore.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:ViewModelMain}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+        Title="{Binding Title}" Height="600" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Menu Height="25" VerticalAlignment="Top">
+        <Menu Height="25" VerticalAlignment="Top" Grid.Row="0">
             <MenuItem Header="File">
                 <MenuItem Header="New Project" ></MenuItem>
                 <MenuItem Header="Open Project" >
@@ -30,7 +31,7 @@
             <MenuItem Header="View" ></MenuItem>
         </Menu>
 
-        <ToolBarTray Grid.Row="0">
+        <ToolBarTray Grid.Row="1">
             <ToolBar Height="25">
                 <Button ToolTip="New Book" Click="New_Button_Click">
                     <Image Source="/new.png" />
@@ -50,22 +51,29 @@
             </ToolBar>
         </ToolBarTray>
 
-        <StatusBar Height="20" Grid.Row="2">
-            <StatusBarItem>
-                <TextBlock Text="Ready" />
-            </StatusBarItem>
-        </StatusBar>
-
-        <TabControl Grid.Row="1">
+        <TabControl Grid.Row="2">
             <TabItem Header="List">
 
                 <Grid>
                     <syncfusion:SfDataGrid x:Name="gridBooks" AllowDraggingColumns="True" AllowResizingColumns="True" 
                                            AllowSorting="True" AllowFiltering="True" ScrollViewer.VerticalScrollBarVisibility="Visible"
                                            ScrollViewer.HorizontalScrollBarVisibility="Visible"
-                                           AllowGrouping="True" ShowGroupDropArea="True"                                           
-                       ItemsSource="{Binding Books}" 
-                       AutoGenerateColumns="True"/>
+                                           AllowGrouping="True" ShowGroupDropArea="True" AutoGenerateColumns="False"                                           
+                                           ItemsSource="{Binding Books}" >
+                        
+                        <syncfusion:SfDataGrid.Columns>
+                            <syncfusion:GridTextColumn HeaderText="ID" MappingName="ID" Width="80" />
+                            <syncfusion:GridTextColumn HeaderText="Author" MappingName="AUTHOR" Width="250" />
+                            <syncfusion:GridTextColumn HeaderText="Title" MappingName="TITLE" Width="300" />
+                            <syncfusion:GridTextColumn HeaderText="Publisher" MappingName="PublisherName" Width="250" />
+                            <syncfusion:GridTextColumn HeaderText="Edition" MappingName="EDITION" Width="80" />
+                            <syncfusion:GridTextColumn HeaderText="Year" MappingName="PUBLISH_YEAR" Width="80" />
+                            <syncfusion:GridTextColumn HeaderText="Group" MappingName="GroupName" Width="200" />
+                            <syncfusion:GridTextColumn HeaderText="Pages" MappingName="PAGE_COUNT" Width="80" />
+                            <syncfusion:GridNumericColumn HeaderText="Price" MappingName="PRICE" Width="80" />
+                        </syncfusion:SfDataGrid.Columns>
+                    </syncfusion:SfDataGrid>
+
                 </Grid>
 
             </TabItem>
@@ -73,6 +81,12 @@
 
             </TabItem>
         </TabControl>
+
+        <StatusBar Height="20" Grid.Row="3">
+            <StatusBarItem>
+                <TextBlock Text="{Binding StatusMessage}" />
+            </StatusBarItem>
+        </StatusBar>
 
     </Grid>
 </Window>
