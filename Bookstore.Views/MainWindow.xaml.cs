@@ -22,15 +22,16 @@ namespace Bookstore.Views
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(ViewModelMain viewModelMain, BookWindow bookWindow)
         {
             InitializeComponent();
+            _mainViewModel = viewModelMain;
+            DataContext = _mainViewModel;
+            _bookWindow = bookWindow;
         }
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            _mainViewModel = new ViewModelMain();
-            DataContext = _mainViewModel;
+        {            
             await LoadData();
         }
 
@@ -48,15 +49,11 @@ namespace Bookstore.Views
         }        
 
         private void New_Button_Click(object sender, RoutedEventArgs e)
-        {            
-            var bookWindow = new BookWindow();
-            var bookVM = new ViewModelBook();
-            bookWindow.DataContext = bookVM;
-            bookVM.EntityId = null;
-            bookVM.Load();            
-            bookWindow.ShowDialog();
+        {                                                            
+            _bookWindow.ShowDialog();
         }
 
         private ViewModelMain _mainViewModel;
+        private BookWindow _bookWindow;
     }
 }

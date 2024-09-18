@@ -806,9 +806,9 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\max\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "E:\\MyProgs\\Syncfusion\\25.1.35\\WPF\\25.1.35\\ToolboxNuGetPackages": {}
+    "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\26.1.35\\ToolboxNuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -816,15 +816,15 @@
       "projectUniqueName": "C:\\Projects\\Bookstore\\Bookstore.ViewModel\\Bookstore.ViewModel.csproj",
       "projectName": "Bookstore.ViewModel",
       "projectPath": "C:\\Projects\\Bookstore\\Bookstore.ViewModel\\Bookstore.ViewModel.csproj",
-      "packagesPath": "C:\\Users\\max\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\Projects\\Bookstore\\Bookstore.ViewModel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "E:\\MyProgs\\Syncfusion\\25.1.35\\WPF\\25.1.35\\ToolboxNuGetPackages"
+        "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\26.1.35\\ToolboxNuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\max\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
@@ -835,7 +835,6 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "E:\\MyProgs\\Syncfusion\\25.1.35\\WinUI\\25.1.35\\NuGetPackages": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nuget.devexpress.com/mV12OR7RA5NC1Ro6BhsBcoiPkfkf9zcggWsrCuIXNeRrS3GqSp/api/v3/index.json": {}
       },
@@ -905,7 +904,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

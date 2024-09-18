@@ -12,10 +12,10 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\max\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\max\\.nuget\\packages",
+      "C:\\Users\\user\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\user\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-      "E:\\MyProgs\\Syncfusion\\25.1.35\\WPF\\25.1.35\\ToolboxNuGetPackages"
+      "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\26.1.35\\ToolboxNuGetPackages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,

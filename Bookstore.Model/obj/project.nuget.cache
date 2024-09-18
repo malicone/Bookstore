@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jumGNHucvZ4=",
+  "dgSpecHash": "nnncj7kjcBQ=",
   "success": true,
   "projectFilePath": "C:\\Projects\\Bookstore\\Bookstore.Model\\Bookstore.Model.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\max\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
-    "C:\\Users\\max\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
-    "C:\\Users\\max\\.nuget\\packages\\firebirdsql.data.firebirdclient\\8.5.4\\firebirdsql.data.firebirdclient.8.5.4.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\firebirdsql.data.firebirdclient\\8.5.4\\firebirdsql.data.firebirdclient.8.5.4.nupkg.sha512"
   ],
   "logs": []
 }

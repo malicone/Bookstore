@@ -1,0 +1,30 @@
+2024-08-22 14:45:32.6977 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2024-08-22 14:45:34.8344 | ERROR | Bookstore.ViewModel.ViewModelBase | Exception in ViewModelMain | FirebirdSql.Data.FirebirdClient.FbException (0x80004005): Unable to complete network request to host "localhost".
+ ---> FirebirdSql.Data.Common.IscException: Unable to complete network request to host "localhost".
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it. 127.0.0.1:3050
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FirebirdSql.Data.Client.Managed.GdsConnection.Connect()
+   --- End of inner exception stack trace ---
+   at FirebirdSql.Data.Client.Managed.GdsConnection.Connect()
+   at FirebirdSql.Data.Client.ClientFactory.CreateManagedDatabase(ConnectionString options)
+   at FirebirdSql.Data.Client.ClientFactory.CreateDatabase(ConnectionString options)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at Bookstore.ViewModel.ViewModelBase.SetupConnection() in C:\Projects\Bookstore\Bookstore.ViewModel\ViewModelBase.cs:line 46
+2024-08-22 14:46:22.0665 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2024-08-22 14:46:24.3409 | ERROR | Bookstore.ViewModel.ViewModelBase | Exception in ViewModelMain | FirebirdSql.Data.FirebirdClient.FbException (0x80004005): Unable to complete network request to host "localhost".
+ ---> FirebirdSql.Data.Common.IscException: Unable to complete network request to host "localhost".
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it. 127.0.0.1:3050
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FirebirdSql.Data.Client.Managed.GdsConnection.Connect()
+   --- End of inner exception stack trace ---
+   at FirebirdSql.Data.Client.Managed.GdsConnection.Connect()
+   at FirebirdSql.Data.Client.ClientFactory.CreateManagedDatabase(ConnectionString options)
+   at FirebirdSql.Data.Client.ClientFactory.CreateDatabase(ConnectionString options)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at Bookstore.ViewModel.ViewModelBase.SetupConnection() in C:\Projects\Bookstore\Bookstore.ViewModel\ViewModelBase.cs:line 46

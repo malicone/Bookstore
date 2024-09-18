@@ -1,0 +1,24 @@
+2024-09-17 01:03:16.1140 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2024-09-17 01:03:16.3371 | ERROR | Bookstore.ViewModel.ViewModelBase | Exception in ViewModelMain | FirebirdSql.Data.FirebirdClient.FbException (0x80004005): connection rejected by remote interface
+ ---> FirebirdSql.Data.Common.IscException: connection rejected by remote interface
+   at FirebirdSql.Data.Client.Managed.GdsConnection.Identify(String database)
+   at FirebirdSql.Data.Client.ClientFactory.CreateManagedDatabase(ConnectionString options)
+   at FirebirdSql.Data.Client.ClientFactory.CreateDatabase(ConnectionString options)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at Bookstore.ViewModel.ViewModelBase.SetupConnection() in C:\Projects\Bookstore\Bookstore.ViewModel\ViewModelBase.cs:line 46
+2024-09-17 01:03:50.6843 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2024-09-17 01:03:50.7928 | ERROR | Bookstore.ViewModel.ViewModelBase | Exception in ViewModelMain | FirebirdSql.Data.FirebirdClient.FbException (0x80004005): connection rejected by remote interface
+ ---> FirebirdSql.Data.Common.IscException: connection rejected by remote interface
+   at FirebirdSql.Data.Client.Managed.GdsConnection.Identify(String database)
+   at FirebirdSql.Data.Client.ClientFactory.CreateManagedDatabase(ConnectionString options)
+   at FirebirdSql.Data.Client.ClientFactory.CreateDatabase(ConnectionString options)
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnectionInternal.Connect()
+   at FirebirdSql.Data.FirebirdClient.FbConnection.Open()
+   at Bookstore.ViewModel.ViewModelBase.SetupConnection() in C:\Projects\Bookstore\Bookstore.ViewModel\ViewModelBase.cs:line 46
+2024-09-17 01:08:05.2782 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2024-09-17 01:08:47.9057 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelBook created | 
+2024-09-17 01:11:58.7864 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 
+2024-09-17 23:38:00.0197 | TRACE | Bookstore.ViewModel.ViewModelBase | ViewModelMain created | 

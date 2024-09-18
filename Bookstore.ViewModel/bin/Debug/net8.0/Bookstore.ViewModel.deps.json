@@ -187,7 +187,10 @@
           "FirebirdSql.Data.FirebirdClient": "8.5.4"
         },
         "runtime": {
-          "Bookstore.Model.dll": {}
+          "Bookstore.Model.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

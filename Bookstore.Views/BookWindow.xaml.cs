@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bookstore.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,13 @@ namespace Bookstore.Views
     /// </summary>
     public partial class BookWindow : Window
     {
-        public BookWindow()
+        public BookWindow(ViewModelBook viewModelBook)
         {
             InitializeComponent();
+            _viewModelBook = viewModelBook;
+            DataContext = _viewModelBook;
         }
+
+        private ViewModelBook _viewModelBook;
     }
 }
